@@ -1,0 +1,15 @@
+import java.util.Scanner;
+import java.io.FileInputStream;
+ 
+class Solution
+{
+    public static void main(String args[]) throws Exception
+    {
+        // 스캐너 선언
+        Scanner sc = new Scanner(System.in);
+        // 입력값 변수에 저장
+        String T = sc.nextLine();
+        // 소문자를 대문자로 변환해서 출력
+        System.out.print(T.toUpperCase());
+    }
+}
