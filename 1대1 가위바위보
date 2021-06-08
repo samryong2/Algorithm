@@ -1,0 +1,22 @@
+class Solution
+{
+	public static void main(String args[]) throws Exception
+	{
+		Scanner sc = new Scanner(System.in);
+    // 숫자 띄어쓰기 입력값을 받음
+		String T=sc.nextLine();
+    // 첫번째 값이 A
+		int a = T.charAt(0);
+    // 세번째 값이 B
+		int b = T.charAt(2);
+    // A와 B의 차이를 구한다
+		int score = a - b;
+    // 차이가 -2 또는 1이면 A가 승리
+    if (score == -2 || score == 1) {
+        System.out.println("A");
+		} else {// 비기는 경우는 없으니 나머지는 B의 승리
+			System.out.println("B");
+		}
+		
+	}
+}
