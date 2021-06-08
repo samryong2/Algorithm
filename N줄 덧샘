@@ -1,0 +1,12 @@
+class Solution
+{
+	public static void main(String args[]) throws Exception
+	{
+    // 스캐너 선언
+		Scanner sc = new Scanner(System.in);
+    // 입력값 넣을 변수
+		int T=sc.nextInt();
+    // n*(n+1)/2 가우스
+		System.out.println(T*(T+1)/2);
+	}
+}
