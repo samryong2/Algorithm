@@ -1,0 +1,19 @@
+import java.util.Scanner;
+import java.io.FileInputStream;
+class Solution
+{
+	public static void main(String args[]) throws Exception
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		String[] array;
+		int input = sc.nextInt();
+		sc.nextLine();
+		
+		for (int i = 1; i <= input; i++) {
+			String valueInput = sc.nextLine();
+			array = valueInput.split("\\s");
+			System.out.println("#"+i+" "+Integer.parseInt(array[0])/Integer.parseInt(array[1])+" "+ Integer.parseInt(array[0])%Integer.parseInt(array[1]));
+		}
+	}
+}
