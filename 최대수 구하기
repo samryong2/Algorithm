@@ -1,0 +1,21 @@
+class Solution
+{
+    public static void main(String args[]) throws Exception
+    {
+         
+        Scanner sc = new Scanner(System.in);
+         
+        String[] array;
+        int[] iarray;
+         
+        int input = sc.nextInt();
+        sc.nextLine();
+         
+        for (int i = 1; i <= input; i++) {
+            String valueInput = sc.nextLine();
+            array = valueInput.split("\\s");
+            iarray = Arrays.stream(array).mapToInt(Integer::parseInt).toArray();
+            System.out.println("#"+i+" "+Arrays.stream(iarray).max().getAsInt());
+        }
+    }
+}
