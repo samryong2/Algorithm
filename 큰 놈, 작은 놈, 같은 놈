@@ -1,0 +1,28 @@
+class Solution
+{
+	public static void main(String args[]) throws Exception
+	{
+	Scanner sc = new Scanner(System.in);
+		
+		String[] array;
+		
+		int input = sc.nextInt();
+		sc.nextLine();
+		
+		for (int i = 1; i <= input; i++) {
+			String valueInput = sc.nextLine();
+			array = valueInput.split("\\s");
+			
+			Integer a = Integer.parseInt(array[0]);
+			Integer b = Integer.parseInt(array[1]);
+			
+			if ( a.compareTo(b) == 0) {
+				System.out.println("#"+i+" =");
+			}else if (a.compareTo(b) == -1) {
+				System.out.println("#"+i+" <");
+			}else {
+				System.out.println("#"+i+" >");
+			}
+		}
+	}
+}
